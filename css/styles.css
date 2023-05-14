@@ -160,6 +160,15 @@ body {
   border: 2px solid var(--accent-color-yellow);
 }
 
+/* .........................Hero.................. */
+.header-hero {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+
+  color: var(--primary-color);
+}
+
 /* ...........................Section Offerings............. */
 
 .offerings {
