@@ -22,6 +22,25 @@
       <header class="header">
         <div class="container header-container">
           <a href="./index.html" class="logo-link">
+
+            <!-- <svg class="logo-icon" aria-label="logo icon" width="64" height="63">
+  <use href="./"></use>
+</svg> -->
+
+
+
+
+             <!-- <svg
+                  class="logo-icon"
+                  aria-label="icon logo"
+                  width="64"
+                  height="64"
+                >
+                  <use href="./img/footer/icons.svg#icon-logo"></use>
+                </svg> -->
+
+
+
             <img src="./images/logo.svg" alt="logo" />
           </a>
           <div class="wrap">
@@ -64,8 +83,41 @@
 
         <section class="section section-theme-yellow">
           <div class="container menu-offerings">
-            <div class="about-left-side item-round">
-            <img src="./images/apple.png" alt="food apple" width="502" height="502" />
+            <div class="about-left-side">
+               <picture>
+                    <source
+                      srcset="
+                        ./images/offerings/apple-bg.jpg    1x,
+                        ./images/offerings/apple-bg@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/offerings/apple-tb.jpg    1x,
+                        ./images/offerings/apple-tb@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/offerings/apple-mb.jpg    1x,
+                        ./images/offerings/apple-mb@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/offerings/apple-bg.jpg"
+                      alt="food apple"
+                      width="502"
+                      height="502"
+                      class="item-round"
+                    />
+                  </picture>
+              
+            <!-- <img class="item-round" src="./images/offerings/apple-bg.jpg" alt="food apple" width="502" height="502" /> -->
           <!-- <img src="./images/food-apple.jpg" alt="food apple" width="502" height="502" /> -->
           </div>
           <div class="about-right-side">
@@ -139,7 +191,7 @@
                 too, I would recommend to a freind, No questions asked"
               </p>
               <div class="card-customers">
-              <img src="./images/summith-shah.jpg" alt="summith shah" width="48" height="48" />
+              <img class="card-customers-img" src="./images/summith-shah.jpg" alt="summith shah" width="48" height="48" />
               <div class="customers-names">
               <h3 class="card-customers-title">Sumith Shah</h3>
               <p class="card-customers-discr">Some Dude</p>
