@@ -282,7 +282,6 @@ body {
   color: var(--primary-color);
 }
 .item-round {
-  display: block;
   border: 5px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   padding: 24px;
@@ -379,6 +378,12 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 160px;
+  border-right: 1px solid var(--btn-dark-green);
+}
+
+.card-customers-img {
+  border: 2px solid #ffe550;
+  border-radius: 50%;
 }
 
 .card-customers-title {
@@ -453,14 +458,24 @@ body {
   margin: 0 auto;
   padding-top: 100px;
   max-width: 1280px;
+  background-image: url(../images/footer/fruit-footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .menu-footer {
   display: flex;
   justify-content: space-between;
-  background-image: url(../images/footer/fruit-footer.png);
+}
+
+.page-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  background-image: url(../img/footer/fruit-futer.jpg);
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 1211px 266px;
 }
 
 .footer-list {
