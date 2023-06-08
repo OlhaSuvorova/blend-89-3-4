@@ -140,6 +140,11 @@ body {
   border-radius: 30px;
 }
 
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+  background-color: var(--first-color);
+}
+
 .btn-main {
   background-color: var(--secondary-color);
   padding: 6px 18px;
@@ -581,4 +586,120 @@ body {
 
   color: var(--primary-color);
   text-align: right;
+}
+
+/* ================================ MODAL WINDOW ===================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 99, 99, 0.7);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* max-width: 458px; */
+
+  width: 458px;
+  min-height: 450px;
+  background: var(--bg-color-yellow-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 32px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: var(--secondary-bg-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-close-btn-icon {
+  fill: var(--primary-color);
+  box-shadow: inset 2px 1px 4px rgba(61, 61, 61, 0.1);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-form {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.modal-form-field {
+  margin-bottom: 24px;
+}
+
+.modal-form-input-desc {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  margin-left: 12px;
+  color: var(--primary-color);
+}
+
+/* .modal-form-input-wraper {
+  position: relative;
+  display: block;
+} */
+
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 49px;
+  left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25px;
+  padding-left: 12px;
+  border-radius: 30px;
+  background: var(--secondary-bg-color);
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  color: #c4c4c4;
+}
+
+.modal-form-submit {
+  padding: 10px 38px;
+  min-width: 106px;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  background: var(--secondary-bg-color);
+  border: 2px solid var(--btn-dark-green);
+  color: var(--primary-color);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--secondary-color);
 }
